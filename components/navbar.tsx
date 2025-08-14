@@ -60,12 +60,13 @@ export function Navbar() {
         className={`${getNavbarPosition()} top-0 left-0 right-0 z-50 transition-all duration-300 ${getNavbarBackground()}`}
       >
         <div className="container-nevelaski">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-18">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <div className="w-8 h-8 bg-nevelaski-red flex items-center justify-center">
+              <img src="/logo-red.svg" alt="Nevelaski" className="w-10 h-10" />
+              {/* <div className="w-8 h-8 bg-nevelaski-red flex items-center justify-center">
                 <div className="w-4 h-4 bg-white" style={{ clipPath: "polygon(0 0, 100% 0, 50% 100%)" }} />
-              </div>
+              </div> */}
             </Link>
 
             <div className="flex items-center space-x-4">
@@ -89,14 +90,12 @@ export function Navbar() {
         <div className="fixed inset-0 z-50 bg-nevelaski-red">
           <div className="flex flex-col h-full container-nevelaski">
             {/* Header */}
-            <div className="flex items-center justify-between h-16">
+            <div className="flex items-center justify-between h-18">
               <Link href="/" className="flex items-center" onClick={toggleMenu}>
-                <div className="w-8 h-8 bg-white flex items-center justify-center">
-                  <div className="w-4 h-4 bg-nevelaski-red" style={{ clipPath: "polygon(0 0, 100% 0, 50% 100%)" }} />
-                </div>
+                <img src="/logo-white.svg" alt="Nevelaski" className="w-10 h-10" />
               </Link>
               <button onClick={toggleMenu} className="p-2 text-white" aria-label="Close menu">
-                <X className="w-6 h-6" />
+                <img src="/img-close.svg" alt="Close menu" className="w-10 h-10" />
               </button>
             </div>
 

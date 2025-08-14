@@ -54,7 +54,9 @@ export function Recommendations() {
 
   const getVisibleTestimonials = () => {
     const visible = []
-    const itemsToShow = window.innerWidth < 768 ? 1 : 2
+    // Use a state or prop to track screen size instead of window.innerWidth
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768
+    const itemsToShow = isMobile ? 1 : 2
     for (let i = 0; i < itemsToShow; i++) {
       const index = (currentSlide + i) % testimonials.length
       visible.push({ ...testimonials[index], originalIndex: index })

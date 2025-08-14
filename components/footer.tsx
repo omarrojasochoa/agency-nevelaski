@@ -34,21 +34,25 @@ export function Footer() {
             {/* Logo */}
             <div>
               <Link href="/" className="flex items-center mb-8">
-                <div className="w-8 h-8 bg-nevelaski-red flex items-center justify-center">
+                {/* <div className="w-8 h-8 bg-nevelaski-red flex items-center justify-center">
                   <div className="w-4 h-4 bg-white" style={{ clipPath: "polygon(0 0, 100% 0, 50% 100%)" }} />
-                </div>
+                </div> */}
+                <img src="/logo-white.svg" alt="Nevelaski" className="w-12 h-12" />
               </Link>
             </div>
 
             {/* Navigation */}
             <div>
-              <h3 className="text-sm font-semibold mb-4 text-gray-400">NAVEGACIÓN</h3>
+              <h3 className="text-sm font-semibold mb-4 text-gray-400">/NAVEGACIÓN</h3>
               <div className="space-y-2">
                 <Link href="/" className="block text-sm hover:text-nevelaski-red transition-colors">
                   Inicio
                 </Link>
                 <Link href="/trabajos" className="block text-sm hover:text-nevelaski-red transition-colors">
                   Trabajos
+                </Link>
+                <Link href="/proyectos" className="block text-sm hover:text-nevelaski-red transition-colors">
+                  Proyectos
                 </Link>
                 <Link href="/nosotros" className="block text-sm hover:text-nevelaski-red transition-colors">
                   Nosotros
@@ -61,7 +65,7 @@ export function Footer() {
 
             {/* Social Media */}
             <div>
-              <h3 className="text-sm font-semibold mb-4 text-gray-400">REDES</h3>
+              <h3 className="text-sm font-semibold mb-4 text-gray-400">/REDES</h3>
               <div className="space-y-2">
                 <a href="#" className="block text-sm hover:text-nevelaski-red transition-colors">
                   Instagram
@@ -75,16 +79,17 @@ export function Footer() {
 
           {/* Copyright */}
           <div className="border-t border-gray-800 mt-12 pt-8">
-            <p className="text-xs text-gray-500">Copyright © 2025 Nevelaski. Todos los derechos reservados.</p>
+            <p className="text-xs text-gray-500 text-center">Copyright © 2025 Nevelaski. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>
 
       {/* Large Brand Name */}
-      <div className="py-8">
-        <div className="container-nevelaski">
-          <h1 className="text-6xl md:text-8xl font-display font-black text-white/10">NEVELASKI</h1>
-        </div>
+      <div className="container-nevelaski">
+        <h1 className="text-6xl md:text-8xl font-display font-black text-white/10">
+          {/* NEVELASKI */}
+          <img src="/NEVELASKI.svg" alt="Nevelaski" />
+        </h1>
       </div>
     </footer>
   )
