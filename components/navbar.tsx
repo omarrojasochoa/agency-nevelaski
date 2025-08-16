@@ -45,9 +45,9 @@ export function Navbar() {
 
   const getNavbarBackground = () => {
     if (isHomePage) {
-      return isScrolled ? "bg-white/95 backdrop-blur-sm border-b border-gray-100" : "bg-transparent"
+      return isScrolled ? "bg-nevelaski-white/95 backdrop-blur-sm border-b border-gray-100" : "bg-transparent"
     }
-    return "bg-white/95 backdrop-blur-sm border-b border-gray-100"
+    return "bg-nevelaski-white/95 backdrop-blur-sm border-b border-gray-100"
   }
 
   const getNavbarPosition = () => {
@@ -64,9 +64,6 @@ export function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <img src="/logo-red.svg" alt="Nevelaski" className="w-10 h-10" />
-              {/* <div className="w-8 h-8 bg-nevelaski-red flex items-center justify-center">
-                <div className="w-4 h-4 bg-white" style={{ clipPath: "polygon(0 0, 100% 0, 50% 100%)" }} />
-              </div> */}
             </Link>
 
             <div className="flex items-center space-x-4">
@@ -79,7 +76,7 @@ export function Navbar() {
                 className="w-10 h-10 bg-nevelaski-black hover:bg-nevelaski-black/90 transition-colors flex items-center justify-center"
                 aria-label="Toggle menu"
               >
-                <div className="w-4 h-4 bg-white"></div>
+                <div className="w-4 h-4 bg-nevelaski-white"></div>
               </button>
             </div>
           </div>

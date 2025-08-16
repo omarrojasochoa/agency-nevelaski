@@ -39,7 +39,7 @@ export function FAQ() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-nevelaski-white">
       <div className="container-nevelaski">
         <h2 className="text-4xl font-display font-bold mb-12">FAQ</h2>
 

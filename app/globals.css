@@ -84,6 +84,8 @@
   --color-nevelaski-black: #0f0f0f;
   --color-nevelaski-gray: #6b7280;
   --color-nevelaski-light-gray: #f3f4f6;
+  --color-nevelaski-white:#F0F1FA;
+  --color-nevelaski-dark: #0F1117;
 
   /* Override default colors */
   --color-primary: var(--color-nevelaski-red);
@@ -144,9 +146,15 @@
   .text-nevelaski-red {
     color: var(--color-nevelaski-red);
   }
+  .text-nevelaski-dark {
+    color: var(--color-nevelaski-dark);
+  }
 
   .bg-nevelaski-red {
     background-color: var(--color-nevelaski-red);
+  }
+  .bg-nevelaski-white {
+    background-color: var(--color-nevelaski-white);
   }
 
   .text-nevelaski-black {
@@ -198,4 +206,21 @@
   }
 
   /* Removed fade-in-up animation and animate-fade-in-up class */
+}
+
+.brandslider-container{
+  mask-image: linear-gradient(
+    90deg,
+    rgba(240, 241, 250, 0.25) 0%,
+    rgb(240, 241, 250) 25%,
+    rgb(240, 241, 250) 75%,
+    rgba(240, 241, 250, 0.25) 100%
+  ); 
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(240, 241, 250, 0.25) 0%,
+    rgb(240, 241, 250) 25%,
+    rgb(240, 241, 250) 75%,
+    rgba(240, 241, 250, 0.25) 100%
+  );
 }

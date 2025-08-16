@@ -22,7 +22,7 @@ export function FeaturedWorks() {
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-nevelaski-white">
       <div className="container-nevelaski">
         <div className="flex items-end justify-between mb-12">
           <div>

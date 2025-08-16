@@ -3,8 +3,23 @@ import Link from "next/link"
 export function Footer() {
   return (
     <footer className="bg-nevelaski-black text-white">
+      {/* Conversemos */}
+      <div className="bg-nevelaski-white py-16 md:py-20">
+        <div className="container-nevelaski">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <div className="text-2xl font-bold text-nevelaski-dark">Conversemos</div>
+            </div>
+            <div className="text-right">
+              {/* <p className="text-sm opacity-90">El primer paso para elevar tu presencia online</p> */}
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       {/* WhatsApp Section */}
-      <div className="bg-nevelaski-red py-8">
+      <div className="bg-nevelaski-red py-16 md:py-20">
         <div className="container-nevelaski">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
@@ -18,9 +33,9 @@ export function Footer() {
       </div>
 
       {/* Reunion Section */}
-      <div className="py-12">
+      <div className="py-16 md:py-20">
         <div className="container-nevelaski">
-          <div className="flex items-center justify-between mb-12">
+          <div className="flex items-center justify-between">
             <h2 className="text-4xl font-display font-bold">REUNIÓN</h2>
             <p className="text-gray-400">Reunión de 15 minutos gratuita para resolver dudas</p>
           </div>
@@ -34,9 +49,6 @@ export function Footer() {
             {/* Logo */}
             <div>
               <Link href="/" className="flex items-center mb-8">
-                {/* <div className="w-8 h-8 bg-nevelaski-red flex items-center justify-center">
-                  <div className="w-4 h-4 bg-white" style={{ clipPath: "polygon(0 0, 100% 0, 50% 100%)" }} />
-                </div> */}
                 <img src="/logo-white.svg" alt="Nevelaski" className="w-12 h-12" />
               </Link>
             </div>

@@ -82,7 +82,7 @@ export function Services() {
   ]
 
   return (
-    <section ref={sectionRef} className="py-20 bg-white">
+    <section ref={sectionRef} className="py-20 bg-nevelaski-white">
       <div className="container-nevelaski">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">SERVICIOS</h2>
