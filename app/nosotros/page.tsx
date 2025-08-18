@@ -7,7 +7,7 @@ import { FindOurWork } from "@/components/nosotros/find-our-work"
 
 export default function NosotrosPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-nevelaski-white">
       <Navbar />
       <main>
         <NosotrosHeader />

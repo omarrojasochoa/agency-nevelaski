@@ -18,7 +18,6 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Nevelaski - Estudio Creativo",
   description: "Estudio creativo multidisciplinario especializado en soluciones visuales para el sector médico.",
-    generator: 'v0.app'
 }
 
 export default function RootLayout({

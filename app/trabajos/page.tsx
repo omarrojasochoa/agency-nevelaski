@@ -7,7 +7,7 @@ export default function TrabajosPage() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main>
+      <main className="bg-nevelaski-white">
         <TrabajosHeader />
         <TrabajosGrid />
       </main>

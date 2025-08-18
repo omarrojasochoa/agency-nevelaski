@@ -68,10 +68,11 @@ export function Recommendations() {
     <section className="py-20 bg-nevelaski-white">
       <div className="container-nevelaski">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
-            LO QUE DICEN NUESTROS
+          <h2 className="text-2xl md:text-4xl font-inter font-extrabold mb-4">
+            {/* LO QUE DICEN NUESTROS */}
+            LOS MEJORES NOS
             <br />
-            <span className="text-nevelaski-red">CLIENTES</span>
+            <span className="text-nevelaski-red">{/* CLIENTES */} RECOMIENDAN</span>
           </h2>
         </div>
 

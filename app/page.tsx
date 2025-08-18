@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main>
+      <main className="bg-nevelaski-white">
         <HomeHeader />
         <BrandSlider />
         <OnlinePresence />

@@ -25,56 +25,64 @@ export function BrandSlider() {
   ]
 
   return (
-    <section className="py-12 bg-white overflow-hidden relative brandslider-container">
-      {/* Fondo izquierdo */}
-      {/* <div className="absolute left-0 top-0 h-full w-32 z-10 bg-gradient-to-r from-white via-white/90 to-transparent">
-        <img 
-          src="../bg-left.svg" 
-          alt="" 
-          className="h-full w-full object-cover"
-          aria-hidden="true"
-        />
-      </div> */}
-
-      {/* Fondo derecho */}
-      {/* <div className="absolute right-0 top-0 h-full w-32 z-10 bg-gradient-to-l from-white via-white/90 to-transparent">
-        <img 
-          src="../bg-right.svg" 
-          alt="" 
-          className="h-full w-full object-cover"
-          aria-hidden="true"
-        />
-      </div>
- */}
-      <div className="space-y-8 relative">
-        {/* First Row - Moving Right */}
-        <div className="flex animate-scroll-right">
-          {[...brands, ...brands].map((imgSrc, index) => (
-            <div key={index} className="flex-shrink-0 mx-8">
-              <img 
-                src={imgSrc} 
-                alt={`Cliente ${index % brands.length + 1}`}
-                className="h-12 object-contain"
-                width={120}
-                height={48}
-              />
-            </div>
-          ))}
+    <section className="py-12 bg-nevelaski-white overflow-hidden relative brandslider-container pt-20">
+      <div className="container-nevelaski">
+        {/* Fondo izquierdo */}
+        <div className="flex justify-center mb-4 uppercase">
+          <h3 className="text-2xl md:text-3xl font-inter font-extrabold mb-6 uppercase text-nevelaski-dark mb-4 z-11">
+            Confiaron en 
+            <span className="text-nevelaski-red"> nosotros</span>
+          </h3>
+        </div>
+        <div className="absolute left-0 top-0 h-full w-32 z-10 bg-gradient-to-r from-white via-white/90 to-transparent">
+          <img 
+            src="../bg-left.svg" 
+            alt="" 
+            className="h-full w-full object-cover"
+            aria-hidden="true"
+          />
         </div>
 
-        {/* Second Row - Moving Left */}
-        <div className="flex animate-scroll-left">
-          {[...brands, ...brands].map((imgSrc, index) => (
-            <div key={index} className="flex-shrink-0 mx-8">
-              <img 
-                src={imgSrc} 
-                alt={`Cliente ${index % brands.length + 1}`}
-                className="h-12 object-contain"
-                width={120}
-                height={48}
-              />
-            </div>
-          ))}
+        {/* Fondo derecho */}
+        <div className="absolute right-0 top-0 h-full w-32 z-10 bg-gradient-to-l from-white via-white/90 to-transparent">
+          <img 
+            src="../bg-right.svg" 
+            alt="" 
+            className="h-full w-full object-cover"
+            aria-hidden="true"
+          />
+        </div>
+
+        <div className="space-y-8 relative">
+          {/* First Row - Moving Right */}
+          <div className="flex animate-scroll-right">
+            {[...brands, ...brands].map((imgSrc, index) => (
+              <div key={index} className="flex-shrink-0 mx-8">
+                <img 
+                  src={imgSrc} 
+                  alt={`Cliente ${index % brands.length + 1}`}
+                  className="h-12 object-contain"
+                  width={120}
+                  height={48}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Second Row - Moving Left */}
+          <div className="flex animate-scroll-left">
+            {[...brands, ...brands].map((imgSrc, index) => (
+              <div key={index} className="flex-shrink-0 mx-8">
+                <img 
+                  src={imgSrc} 
+                  alt={`Cliente ${index % brands.length + 1}`}
+                  className="h-12 object-contain"
+                  width={120}
+                  height={48}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

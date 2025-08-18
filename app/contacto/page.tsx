@@ -7,7 +7,7 @@ import { MeetingSection } from "@/components/contacto/meeting-section"
 
 export default function ContactoPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-nevelaski-white">
       <Navbar />
       <main>
         <div className="container-nevelaski py-20">

@@ -2,16 +2,16 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-nevelaski-black text-white">
+    <footer className="text-white">
       {/* Conversemos */}
       <div className="bg-nevelaski-white py-16 md:py-20">
         <div className="container-nevelaski">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="text-2xl font-bold text-nevelaski-dark">Conversemos</div>
+              <div className="uppercase text-3xl font-extrabold text-nevelaski-dark">Conversemos</div>
             </div>
             <div className="text-right">
-              {/* <p className="text-sm opacity-90">El primer paso para elevar tu presencia online</p> */}
+               {/* <p className="text-sm opacity-90">El primer paso para elevar tu presencia online</p>  */}
             </div>
           </div>
         </div>
@@ -23,7 +23,7 @@ export function Footer() {
         <div className="container-nevelaski">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="text-2xl font-bold">📱 WHATSAPP</div>
+              <div className="uppercase text-3xl font-extrabold text-white">WHATSAPP</div>
             </div>
             <div className="text-right">
               <p className="text-sm opacity-90">El primer paso para elevar tu presencia online</p>
@@ -33,17 +33,17 @@ export function Footer() {
       </div>
 
       {/* Reunion Section */}
-      <div className="py-16 md:py-20">
+      <div className="bg-nevelaski-black  py-16 md:py-20">
         <div className="container-nevelaski">
           <div className="flex items-center justify-between">
-            <h2 className="text-4xl font-display font-bold">REUNIÓN</h2>
-            <p className="text-gray-400">Reunión de 15 minutos gratuita para resolver dudas</p>
+            <h2 className="uppercase text-3xl font-extrabold text-white">REUNIÓN</h2>
+            <p className="text-sm opacity-90">Reunión de 15 minutos gratuita para resolver dudas</p>
           </div>
         </div>
       </div>
 
       {/* Main Footer */}
-      <div className="border-t border-gray-800 py-12">
+      <div className="bg-nevelaski-black border-t border-gray-800 py-12">
         <div className="container-nevelaski">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Logo */}
@@ -97,11 +97,10 @@ export function Footer() {
       </div>
 
       {/* Large Brand Name */}
-      <div className="container-nevelaski">
-        <h1 className="text-6xl md:text-8xl font-display font-black text-white/10">
-          {/* NEVELASKI */}
+      <div className="bg-nevelaski-black">
+        <div className="container-nevelaski">
           <img src="/NEVELASKI.svg" alt="Nevelaski" />
-        </h1>
+        </div>        
       </div>
     </footer>
   )

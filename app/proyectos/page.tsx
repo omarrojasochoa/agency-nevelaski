@@ -8,7 +8,7 @@ export default function ProyectosPage() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="pt-16">
+      <main className="pt-16 bg-nevelaski-white">
         <ProyectoHeader />
         <ProyectoGallery />
         <OtrosProyectos />

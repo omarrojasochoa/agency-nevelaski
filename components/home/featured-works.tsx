@@ -26,10 +26,10 @@ export function FeaturedWorks() {
       <div className="container-nevelaski">
         <div className="flex items-end justify-between mb-12">
           <div>
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
+            <h2 className="text-2xl md:text-4xl font-inter font-extrabold mb-4">
               TRABAJOS
               <br />
-              DESTACADOS
+              <span className="text-nevelaski-red">DESTACADOS</span>
             </h2>
           </div>
           <div className="text-right">
@@ -46,13 +46,13 @@ export function FeaturedWorks() {
 
         <div className="space-y-8">
           {works.map((work, index) => (
-            <div key={index} className="group cursor-pointer">
+            <div key={index} className={`group cursor-pointer cursor-pointer-${index}`}>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center py-8 border-b border-gray-200 hover:border-nevelaski-red transition-colors">
-                <div>
+                <div className={`work-text-${index}`}>
                   <h3 className="text-2xl font-display font-bold mb-2">{work.title}</h3>
                   <p className="text-sm text-gray-500">{work.category}</p>
                 </div>
-                <div className="md:col-span-2">
+                <div className={`work-image-${index} md:col-span-2`}>
                   <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
                     <img
                       src={work.image || "/placeholder.svg"}

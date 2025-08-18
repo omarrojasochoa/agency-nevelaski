@@ -21,7 +21,7 @@ export function OnlinePresence() {
 
           {/* Content */}
           <div className="order-1 lg:order-2">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-2xl md:text-4xl font-inter font-extrabold mb-6">
               TU PRESENCIA ONLINE
               <br />
               <span className="text-nevelaski-red">ORIENTADA A RESULTADOS</span>

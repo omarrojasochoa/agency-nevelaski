@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export function HomeHeader() {
   return (
-    <section className="pt-24 pb-16 bg-gradient-to-br from-gray-50 to-white">
+    <section className="pt-24 pb-16 bg-nevelaski-white">
       <div className="container-nevelaski">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
