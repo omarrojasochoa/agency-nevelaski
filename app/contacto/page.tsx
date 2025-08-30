@@ -23,8 +23,8 @@ export default function ContactoPage() {
           </div>
         </div>
         <FAQ />
-        <WhatsAppSection />
-        <MeetingSection />
+        {/* <WhatsAppSection />
+        <MeetingSection /> */}
       </main>
       <Footer />
     </div>
